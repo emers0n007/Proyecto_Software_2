@@ -1,0 +1,28 @@
+server:
+  port: 9091
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  profiles:
+    active: development
+  application:
+    name: FLIP-CARD
+
+data:
+  mongodb:
+    uri: mongodb://localhost:27017/flipcarddb
+    repositories:
+      enabled: true
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core: DEBUG
+            MongoTemplate: DEBUG

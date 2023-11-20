@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Juego de pares</h1>
+  <div id="pantalla">
+    <div id="ganaste" [style.display]="encontradas === 8 ? 'block' : 'none'">
+      GANASTE !!!
+    </div>
+    <div class="info">
+      <p>Encontrados: <span id="encontrados">{{ encontradas }}</span></p>
+      <p>Faltantes: <span id="faltantes">{{ faltantes }}</span></p>
+      <p>Tiempo: <span id="temporizador">{{ tiempo }}</span></p>
+      <p>Intentos: <span id="intentos">{{ intentos }}</span></p>
+    </div>
+  </div>
+  <div class="panel-cartas">
+    <div class="cartas-grid">
+      <div class="carta" *ngFor="let carta of cartas" [class.volteada]="carta.volteada" (click)="voltear(carta)">
+        <div class="cara-frente">
+          <img [src]="carta.volteada ? carta.imagenFrente : carta.imagenAtras" alt="Cara frontal" />
+        </div>
+        <div class="cara-atras">
+          <img [src]="carta.imagenAtras" alt="Cara trasera" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

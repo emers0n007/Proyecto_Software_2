@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <style>
+    .swiper-container {
+      width: 10%; /* Ajusta el ancho del carrusel al 100% del contenedor */
+    }
+    .swiper-slide img {
+      width: 100%; /* Ajusta el tamaño de las imágenes al 100% del carrusel */
+    }
+  </style>
+</head>
+
+<body class="body">
+<header class = "cl_header">
+  <h1>Bienvenidos a Master Mind</h1>
+</header>
+<div class="wrapper">
+  <div class="content-container">
+    <div class="image-section">
+      <img src="assets/img/back.png" class="slide-image">
+    </div>
+    <div class="links-section">
+      <nav>
+        <ul>
+          <li>
+            <button [routerLink]="['/userlogin']">Jugar</button>
+          </li>
+          <li>
+            <button [routerLink]="['/login']">Administrador</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="description-section">
+      <!-- Aquí coloca tu descripción -->
+      <h1>"MindMaster: Desafía tu Mente" </h1>
+
+        <p> MindMaster es una aplicación de videojuego diseñada para evaluar y mejorar habilidades cognitivas y comportamientos in-game. Esta aplicación consta de tres minijuegos cuidadosamente diseñados, cada uno enfocado en áreas específicas del desarrollo cognitivo y comportamental.</p>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Contacto</h4>
+      <p class="contact-info">Correo electrónico: ***********************+</p>
+      <p class="contact-info">Teléfono: +57 311 8088255</p>
+    </div>
+    <div class="footer-section">
+      <h4>Sobre nosotros</h4>
+      <ul>
+        <li><a routerLink="/productos">Opiniones</a></li>
+        <li><a routerLink="/contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Redes Sociales</h4>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="rights">© 2023 Todos los derechos reservados.</p>
+</footer>
+
+</body>
+
+</html>

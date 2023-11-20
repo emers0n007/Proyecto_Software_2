@@ -1,0 +1,240 @@
+
+body {
+  font-family: 'Cormorant Garamond', sans-serif;
+  background-color: #cccccc;
+  border: 3px solid #3498db;
+}
+
+.cl_header{
+
+}
+
+.slide-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para los controles de radio */
+input[type="radio"] {
+  display: none;
+}
+
+/* Estilos para los controles de diapositivas (puedes personalizarlos) */
+#controls {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+#controls label {
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="radio"]:checked + #controls label {
+  background-color: #3498db;
+}
+
+/* Estilos para los botones de navegación (puedes personalizarlos) */
+#bullets {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+#bullets label {
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="radio"]:checked + #bullets label {
+  background-color: #3498db;
+}
+
+/* Estilos para el encabezado */
+header {
+  text-align: center;
+  background-color: #666666;
+  color: #cccccc;
+  padding: 20px;
+  border: 3px solid #3498db;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Estilos para el contenedor principal */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos para las secciones */
+.image-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #5fbae9;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.links-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #cccccc;
+
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+}
+
+a:hover {
+  color: #000028;
+}
+
+.description-section {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  background-color: #333333;
+  color: #0d0d0d;
+  border: 3px solid #3498db;
+  font-weight: bold;
+}
+
+/* Estilos para el pie de página */
+footer {
+  text-align: center;
+  background-color: #555555;
+  color: #000028;
+  border: 3px solid #3498db;
+  padding: 10px;
+
+}
+
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.footer-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  font-size: 14px;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+
+.rights {
+  font-size: 12px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+/* Estilos para las secciones */
+.image-section{
+  flex: 1;
+  padding: 20px;
+  background-color: #333333;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+}
+/* Estilos para los botones en la sección de enlaces */
+.links-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links-section li {
+  margin-bottom: 10px;
+}
+
+.links-section button {
+  width: 200px;
+  background-color: #0d0d0d; /* Color de fondo de los botones */
+  color: #fff; /* Color del texto de los botones */
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 3px solid #3498db;
+}
+
+.links-section button:hover {
+  background-color: #000028; /* Cambia el color al pasar el mouse */
+  border: 3px solid #3498db;
+}
+body,
+h1,
+button,
+p,
+.contact-info,
+ul,
+a,
+h4,
+.rights {
+  color: white; /* Cambia el color según tus preferencias */
+}
+

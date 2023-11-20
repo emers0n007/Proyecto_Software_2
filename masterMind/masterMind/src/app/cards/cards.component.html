@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="cards.component.css">
+  <title>Juego de Pares</title>
+</head>
+<body>
+<h1 class="title-primary">
+  Juego de pares
+</h1>
+<div id="screen" class="screen-primary">
+  <div class="background-overlay"></div>
+  <div id="win" class="win-primary">
+    GANASTE !!!
+  </div>
+  <div *ngFor="let card of cards" (click)="lastCardsFlipped.length < 2 ? flip(card) : null" class="flip-cartaTemporal ctrlCartas" [ngClass]="{'turned': card.turned, 'hide-cards': card.equal}" style="margin: 10px; display: inline-block;">
+    <div class="flip-temporaryCard-inner">
+      <div class="flip-temporaryCard-front">
+        <img src="assets/img/back.png" alt="AvatarF" style="width:100px;height:100px;">
+      </div>
+      <div class="flip-temporaryCard-back">
+        <img [src]="card.turned ? card.imageBack : 'assets/img/back.png'" alt="AvatarB" style="width:100px;height:100px;">
+      </div>
+    </div>
+  </div>
+  <div class="footer-items">
+    <p class="first-item">Encontrados:
+      <span id="encontrados" style="color: red;font-weight: bold;">{{ found }}</span>
+    </p>
+    <p class="other-items">Faltantes:
+      <span id="faltantes" style="color: red;font-weight: bold;">{{ missing }}</span>
+    </p>
+    <p class="other-items">Tiempo:
+      <span id="temporizador" style="color: red;font-weight: bold;">{{ time }}</span>
+    </p>
+    <p class="other-items">Intentos:
+      <span id="intentos" style="color: red;font-weight: bold;">{{ attempts }}</span>
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
+
